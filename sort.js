@@ -63,6 +63,27 @@ function checkp(){
   }
   console.log(checkp);
   document.getElementById("btn").addEventListener("click",checkp);
-  
+  //animation
+var box = document.getElementById('box');
+var direction = 'right';
+var position = 0;
+
+function animateBox() {
+  if (position >= window.innerWidth - box.offsetWidth) {
+    direction = 'left';
+  } else if (position <= 0) {
+    direction = 'right';
+  }
+
+  if (direction === 'right') {
+    position += 10;
+  } else {
+    position -= 10;
+  }
+
+  box.style.left = position + 'px';
+}
+
+setInterval(animateBox, 50);
 }
 

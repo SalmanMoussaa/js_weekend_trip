@@ -17,14 +17,14 @@ window.onload=function(){
     
     //location 
     function showPosition(position) {
-        const latitude = position.coords.latitude;
-        const longitude = position.coords.longitude;
-        const locationElement = document.getElementById("location");
+        var latitude = position.coords.latitude;
+        var longitude = position.coords.longitude;
+        var locationElement = document.getElementById("location");
         locationElement.innerText = `Latitude: ${latitude}, Longitude: ${longitude}`;
       }
   
       function showError(error) {
-        const locationElement = document.getElementById("location");
+        var locationElement = document.getElementById("location");
         locationElement.innerText = `Error: ${error.message}`;
       }
   
@@ -32,7 +32,7 @@ window.onload=function(){
         if (navigator.geolocation) {
           navigator.geolocation.getCurrentPosition(showPosition, showError);
         } else {
-          const locationElement = document.getElementById("location");
+          var locationElement = document.getElementById("location");
           locationElement.innerText = "Geolocation is not supported by this browser.";
         }
 

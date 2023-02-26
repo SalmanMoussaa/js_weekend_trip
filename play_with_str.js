@@ -80,7 +80,7 @@ function checkAge() {
     }
 });
 // back to top
-let mybutton = document.getElementById("myBtn");
+var mybutton = document.getElementById("myBtn");
 
 
 window.onscroll = function() {scrollFunction()};
@@ -98,4 +98,5 @@ function topFunction() {
   document.documentElement.scrollTop = 0;
 }
 mybutton.addEventListener("click",topFunction);
+
 }
