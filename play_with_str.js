@@ -1,15 +1,15 @@
 window.onload=function(){
 function checkAge() {
-    const birthYear = parseInt(document.getElementById("birth-year").value);
-    const age = new Date().getFullYear() - birthYear;
-    let isPrime = true;
-    for (let i = 2; i < age; i++) {
+    var birthYear = parseInt(document.getElementById("birth-year").value);
+    var age = new Date().getFullYear() - birthYear;
+    var isPrime = true;
+    for (var i = 2; i < age; i++) {
       if (age % i === 0) {
         isPrime = false;
         break;
       }
     }
-    const resultElement = document.getElementById("result");
+    var resultElement = document.getElementById("result");
     if (isPrime) {
       resultElement.innerHTML = `${age} is a prime number!`;
     } else {
@@ -18,7 +18,7 @@ function checkAge() {
   }
   document.getElementById("btn").addEventListener("click",checkAge);
   class Course {
-    constructor(name, code, instructor, credits) {
+    varructor(name, code, instructor, credits) {
       this.name = name;
       this.code = code;
       this.instructor = instructor;
@@ -27,26 +27,26 @@ function checkAge() {
   }
 
   function createCourse() {
-    const name = document.getElementById("name").value;
-    const code = document.getElementById("code").value;
-    const instructor = document.getElementById("instructor").value;
-    const credits = parseInt(document.getElementById("credits").value);
-    const course = new Course(name, code, instructor, credits);
-    const resultElement = document.getElementById("result2");
+    var name = document.getElementById("name").value;
+    var code = document.getElementById("code").value;
+    var instructor = document.getElementById("instructor").value;
+    var credits = parseInt(document.getElementById("credits").value);
+    var course = new Course(name, code, instructor, credits);
+    var resultElement = document.getElementById("result2");
     resultElement.innerHTML = `Course created: ${JSON.stringify(course)}`;
   }
   document.getElementById("btn2").addEventListener("click",createCourse);
   //reversing number in a int 
-  const form = document.getElementById("reverse-form");
-  const resultDiv = document.getElementById("result3");
+  var form = document.getElementById("reverse-form");
+  var resultDiv = document.getElementById("result3");
 
   form.addEventListener("submit", (event) => {
     event.preventDefault();
 
-    const inputString = document.getElementById("input-string").value;
-    let reversedString = "";
+    var inputString = document.getElementById("input-string").value;
+    var reversedString = "";
 
-    for (let i = 0; i < inputString.length; i++) {
+    for (var i = 0; i < inputString.length; i++) {
       if (!isNaN(inputString[i])) {
         reversedString = inputString[i] + reversedString;
       } else {
@@ -58,15 +58,15 @@ function checkAge() {
 
   });
   function convert() {
-    const inputString = document.getElementById("inputString").value;
-    let consonantCount = 0;
+    var inputString = document.getElementById("inputString").value;
+    var consonantCount = 0;
     while (
       inputString[consonantCount] &&
       !["a", "e", "i", "o", "u"].includes(inputString[consonantCount].toLowerCase())
     ) {
       consonantCount++;
     }
-    const result =
+    var result =
       inputString.substring(consonantCount) +
       inputString.substring(0, consonantCount) +
       "ay";
