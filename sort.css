@@ -1,9 +1,8 @@
+body{
+    background-color: blanchedalmond;
+}
 .sort{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin-top: 33pc;
+
     background-image: url("Assets/mergeSort.jpg");
 }
 #sorted{
@@ -11,9 +10,21 @@
     font-family:fantasy;
 }
 .home{
+    
+    width: 100%;
     display: flex;
-    flex-direction: row;
-    align-items: center;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
     background-color: black;
+}
+.playndrom{
+
+   color: azure;
+   font-family: fantasy;
+    
+
 }

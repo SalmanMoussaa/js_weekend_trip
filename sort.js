@@ -39,8 +39,29 @@ var sorted = mergeSort(input);
 // Loging the sorted array on the console
 console.log(sorted);
 for(var i =0;i<sorted.length;i++){
-document.getElementById("sorted").innerHTML+= " "+ sorted[i];
+document.getElementById("sorted").innerHTML+= " "+   sorted[i];
 }
 
-
+function palyndrom(str){
+    if(str.length<=1){
+        return true;
+    }
+    if(str[0]==str[str.length-1]){
+        return palyndrom(str.slice(1,str.length-1));
+    }
+    return false;
 }
+function checkp(){
+    
+    var input = document.getElementById("input").value;
+    var result = document.getElementById("result");
+    if (palyndrom(input)) {
+      result.textContent = `${input} is a palindrome!`;
+    } else {
+      result.textContent = `${input} is not a palindrome.`;
+    }
+  }
+  document.getElementById("btn").addEventListener("click",checkp);
+  
+}
+
