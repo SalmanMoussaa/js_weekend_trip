@@ -61,6 +61,7 @@ function checkp(){
       result.textContent = `${input} is not a palindrome.`;
     }
   }
+  console.log(checkp);
   document.getElementById("btn").addEventListener("click",checkp);
   
 }

@@ -36,4 +36,24 @@ function checkAge() {
     resultElement.innerHTML = `Course created: ${JSON.stringify(course)}`;
   }
   document.getElementById("btn2").addEventListener("click",createCourse);
+  //reversing number in a int 
+  const form = document.getElementById("reverse-form");
+  const resultDiv = document.getElementById("result3");
+
+  form.addEventListener("submit", (event) => {
+    event.preventDefault();
+
+    const inputString = document.getElementById("input-string").value;
+    let reversedString = "";
+
+    for (let i = 0; i < inputString.length; i++) {
+      if (!isNaN(inputString[i])) {
+        reversedString = inputString[i] + reversedString;
+      } else {
+        reversedString += inputString[i];
+      }
+    }
+
+    resultDiv.textContent = `Reversed numbers string: ${reversedString}`;
+  });
 }
