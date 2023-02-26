@@ -3,8 +3,6 @@ var input = [];
 for (var i = 0; i < 10; i++) {
   input.push(Number(prompt(`Enter number ${i+1}:`)));
 }
-
-// Define the Merge Sort function
 function mergeSort(arr) {
   if (arr.length <= 1) {
     return arr;
@@ -40,7 +38,9 @@ var sorted = mergeSort(input);
 
 // Loging the sorted array on the console
 console.log(sorted);
-
+for(var i =0;i<sorted.length;i++){
+document.getElementById("sorted").innerHTML+= " "+ sorted[i];
+}
 
 
 }

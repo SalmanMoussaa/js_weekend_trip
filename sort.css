@@ -1,0 +1,19 @@
+.sort{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 33pc;
+    background-image: url("Assets/mergeSort.jpg");
+}
+#sorted{
+    font-size: xx-large;
+    font-family:fantasy;
+}
+.home{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+}
