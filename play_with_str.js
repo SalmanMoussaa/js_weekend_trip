@@ -55,5 +55,22 @@ function checkAge() {
     }
 
     resultDiv.textContent = `Reversed numbers string: ${reversedString}`;
+
   });
+  function convert() {
+    const inputString = document.getElementById("inputString").value;
+    let consonantCount = 0;
+    while (
+      inputString[consonantCount] &&
+      !["a", "e", "i", "o", "u"].includes(inputString[consonantCount].toLowerCase())
+    ) {
+      consonantCount++;
+    }
+    const result =
+      inputString.substring(consonantCount) +
+      inputString.substring(0, consonantCount) +
+      "ay";
+    document.getElementById("result4").innerText = `Result: ${result}`;
+  }
+  document.getElementById("btn3").addEventListener("click",convert);
 }
