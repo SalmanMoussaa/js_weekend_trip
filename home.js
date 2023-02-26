@@ -15,7 +15,7 @@ form.addEventListener('submit', (event) => {
   // Password validation
   var passwordRegex = /^(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$/;
   if (!passwordRegex.test(password)) {
-    alert('Password should contain at least 8 characters, one special character, and one uppercase letter');
+    alert('Password should contain at least 8 characters, one special character, and one uppercase varter');
     return;
   }
 
