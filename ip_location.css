@@ -39,3 +39,6 @@ body {
     cursor: default;
   }
   
+#location{
+    text-align: center;
+}
