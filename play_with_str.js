@@ -73,4 +73,10 @@ function checkAge() {
     document.getElementById("result4").innerText = `Result: ${result}`;
   }
   document.getElementById("btn3").addEventListener("click",convert);
+  //adding scroll alert
+  window.addEventListener('scroll', function() {
+    if (window.scrollY >= document.getElementById('result').offsetTop) {
+        alert('You have scrolled to create a course');
+    }
+});
 }
