@@ -52,5 +52,36 @@ p{
   }
   
   button:hover {
-    background-color: #3e8e41;
+    background-color: #0f0559;
+  }
+  .top-menu {
+    background-color:transparent;
+    color: #fff;
+    height: 50px;
+  }
+  
+  .top-menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+  }
+  
+  .top-menu li {
+    margin: 0 10px;
+  }
+  
+  .top-menu a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px;
+    border-radius: 5px;
+  }
+  
+  .top-menu a:hover {
+    background-color: #555;
   }

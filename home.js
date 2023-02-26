@@ -9,6 +9,8 @@ form.addEventListener('submit', (event) => {
   var password = form.elements['password'].value;
   var confirmPassword = form.elements['confirm-password'].value;
   var age = form.elements['age'].value;
+  
+  
 
   // Password validation
   var passwordRegex = /^(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$/;
@@ -39,4 +41,6 @@ form.addEventListener('submit', (event) => {
   };
 
   console.log(data);
-});}
+});
+
+}
